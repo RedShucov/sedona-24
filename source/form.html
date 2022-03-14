@@ -16,7 +16,11 @@
       <h2>Навигация</h2>
 
       <a href="index.html">
-        <img src="" alt="" width="102" height="82">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/interface/logo/logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/interface/logo/logo-tablet.svg">
+          <img class="" src="img/interface/logo/logo-mobile.svg" width="102" height="82" alt="логотип 'Седона'">
+        </picture>
       </a>
 
       <ul>
@@ -175,7 +179,7 @@
       <li>
         <a href="https://twitter.com/htmlacademy_ru">
           <svg role="img" width="18" height="15">
-            <use xlink:href=""></use>
+            <use xlink:href="img/sprite.svg#icon-twitter"></use>
           </svg>
         </a>
         <span>Мы в твиттер</span>
@@ -183,7 +187,7 @@
       <li>
         <a href="https://www.facebook.com/htmlacademy">
           <svg role="img" width="9" height="19">
-            <use xlink:href=""></use>
+            <use xlink:href="img/sprite.svg#icon-facebook"></use>
           </svg>
         </a>
         <span>Мы в фейсбук</span>
@@ -191,7 +195,7 @@
       <li>
         <a href="https://www.youtube.com/user/htmlacademyru">
           <svg role="img" width="20" height="14">
-            <use xlink:href=""></use>
+            <use xlink:href="img/sprite.svg#icon-youtube"></use>
           </svg>
           <span>Мы в ютубе</span>
         </a>
@@ -202,7 +206,7 @@
       <span>Разработано</span>
       <a href="https://htmlacademy.ru/intensive" target="_blank">
         <svg role="img" width="27" height="34">
-          <use xlink:href=""></use>
+          <use xlink:href="img/sprite.svg#htmlacademy"></use>
         </svg>
       </a>
     </div>
