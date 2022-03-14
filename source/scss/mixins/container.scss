@@ -1,0 +1,20 @@
+@mixin container {
+  box-sizing: border-box;
+  min-width: map-get($widths, sm);
+  padding-right: $gap-sm;
+  padding-left: $gap-sm;
+  margin-right: auto;
+  margin-left: auto;
+
+  @include media-min(md) {
+    min-width: map-get($widths, md);
+    padding-right: $gap-md;
+    padding-left: $gap-md;
+  }
+
+  @include media-min(xl) {
+    min-width: map-get($widths, xl);
+    padding-right: $gap-xl;
+    padding-left: $gap-xl;
+  }
+}
