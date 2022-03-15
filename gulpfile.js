@@ -11,6 +11,7 @@ import rename from 'gulp-rename';
 import terser from 'gulp-terser';
 import squoosh from 'gulp-libsquoosh';
 import svgo from 'gulp-svgmin';
+import cheerio from 'gulp-cheerio';
 import svgstore from 'gulp-svgstore';
 
 //HTML
@@ -76,6 +77,14 @@ const svg = () =>
 const sprite = () => {
   return gulp.src('source/img/sprite/**/*.svg')
     .pipe(svgo())
+    .pipe(cheerio({
+      run: function ($) {
+        $('[fill]').removeAttr('fill');
+        $('[stroke]').removeAttr('stroke');
+        $('[style]').removeAttr('style');
+      },
+      parserOptions: { xmlMode: true }
+    }))
     .pipe(svgstore({
       inlineSvg: false
     }))
