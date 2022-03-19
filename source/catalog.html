@@ -11,156 +11,153 @@
 
 <body>
 
-  <header>
-    <nav>
-      <h2>Навигация</h2>
+  <header class="header">
+    <nav class="site-navigation">
+      <h2 class="visually-hidden">Навигация</h2>
 
-      <a href="index.html">
+      <a class="header__logo" href="index.html">
         <picture>
           <source media="(min-width: 1200px)" srcset="img/interface/logo/logo-desktop.svg">
           <source media="(min-width: 768px)" srcset="img/interface/logo/logo-tablet.svg">
-          <img class="" src="img/interface/logo/logo-mobile.svg" width="102" height="82" alt="логотип 'Седона'">
+          <img class="header__logo-img" src="img/interface/logo/logo-mobile.svg" width="102" height="82" alt="логотип 'Седона'">
         </picture>
       </a>
 
-      <ul>
-        <li>
-          <a href="index.html">Главная</a>
+      <ul class="site-navigation__list">
+        <li class="site-navigation__item">
+          <a class="site-navigation__link" href="index.html">Главная</a>
         </li>
-        <li>
-          <a href="catalog.html">Фото и видео</a>
+        <li class="site-navigation__item">
+          <a class="site-navigation__link site-navigation__link--active" href="catalog.html">Фото и видео</a>
         </li>
-        <li>
-          <a href="form.html">Форма отзыва</a>
+        <li class="site-navigation__item">
+          <a class="site-navigation__link" href="form.html">Форма отзыва</a>
         </li>
-        <li>
-          <a href="https://htmlacademy.ru/intensive" target="_blank">Html academy</a>
+        <li class="site-navigation__item">
+          <a class="site-navigation__link" href="https://htmlacademy.ru/intensive" target="_blank">Html academy</a>
         </li>
       </ul>
+
+      <button class="site-navigation__toggle" type="button"></button>
     </nav>
   </header>
 
   <main>
 
-    <div>
+    <div class="intro intro--inner">
+      <h1 class="intro__title">Фото и видео</h1>
+
+      <p class="intro__text">
+        Не можете решиться на путешествие из-за курса?
+        Фотографии помогут вам забыть о политике и экономике.</p>
     </div>
 
     <section>
-
-      <p>
-        Фото и видео
-      </p>
-
-      <p>
-        Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.
-      </p>
-
+      <h2 class="visually-hidden">Фото</h2>
       <div>
-        <article>
+        <article class="photo">
           <picture>
             <source type="image/webp" media="(min-width: 1200px)" srcset="img/content/photo/desktop/photo-1-desktop@1x.webp, img/content/photo/desktop/photo-1-desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width: 768px)" srcset="img/content/photo/tablet/photo-1-tablet@1x.webp, img/content/photo/tablet/photo-1-tablet@2x.webp 2x">
             <source type="image/webp" srcset="img/content/photo/mobile/photo-1-mobile@1x.webp, img/content/photo/mobile/photo-1-mobile@2x.webp 2x">
             <source media="(min-width: 1200px)" srcset="img/content/photo/desktop/photo-1-desktop@1x.jpg 1x, img/content/photo/desktop/photo-1-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)" srcset="img/content/photo/tablet/photo-1-tablet@1x.jpg 1x, img/content/photo/tablet/photo-1-tablet@2x.jpg 2x">
-            <img src="img/content/photo/mobile/photo-1-mobile@1x.jpg" srcset="img/content/photo/mobile/photo-1-mobile@2x.jpg 2x" width="280" height="280" alt="">
+            <img class="photo__image" src="img/content/photo/mobile/photo-1-mobile@1x.jpg" srcset="img/content/photo/mobile/photo-1-mobile@2x.jpg 2x" width="280" height="280" alt="">
           </picture>
-          <h3>Неродные просторы</h3>
-          <p>
-            <span>Автор фото:</span>
-            <span>Борис</span>
+          <h3 class="photo__name">Неродные просторы</h3>
+          <p class="photo__author-wrapper">
+            <span class="photo__author">Автор фото:</span>
+            <span class="photo__author-name">Борис</span>
           </p>
-          <div>
-            <button type="button">
-              <img src="img/interface/other/like-icon.svg" alt="">
+          <div class="photo__like-wrapper">
+            <button class="photo__like-button" type="button">
+              <img class="photo__like-image" src="img/interface/other/like-icon.svg" alt="">
             </button>
-            <span>1350</span>
+            <span class="photo__like-counter">1350</span>
           </div>
         </article>
 
-        <article>
+        <article class="photo">
           <picture>
             <source type="image/webp" media="(min-width: 1200px)" srcset="img/content/photo/desktop/photo-2-desktop@1x.webp, img/content/photo/desktop/photo-2-desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width: 768px)" srcset="img/content/photo/tablet/photo-2-tablet@1x.webp, img/content/photo/tablet/photo-2-tablet@2x.webp 2x">
             <source type="image/webp" srcset="img/content/photo/mobile/photo-2-mobile@1x.webp, img/content/photo/mobile/photo-2-mobile@2x.webp 2x">
             <source media="(min-width: 1200px)" srcset="img/content/photo/desktop/photo-2-desktop@1x.jpg 1x, img/content/photo/desktop/photo-2-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)" srcset="img/content/photo/tablet/photo-2-tablet@1x.jpg 1x, img/content/photo/tablet/photo-2-tablet@2x.jpg 2x">
-            <img src="img/content/photo/mobile/photo-2-mobile@1x.jpg" srcset="img/content/photo/mobile/photo-2-mobile@2x.jpg 2x" width="280" height="280" alt="">
+            <img class="photo__image" src="img/content/photo/mobile/photo-2-mobile@1x.jpg" srcset="img/content/photo/mobile/photo-2-mobile@2x.jpg 2x" width="280" height="280" alt="">
           </picture>
-          <h3>Местная растительность</h3>
-          <p>
-            <span>Автор фото:</span>
-            <span>Сергей</span>
+          <h3 class="photo__name">Местная растительность</h3>
+          <p class="photo__author-wrapper">
+            <span class="photo__author">Автор фото:</span>
+            <span class="photo__author-name">Сергей</span>
           </p>
-          <div>
-            <button type="button">
-              <img src="img/interface/other/like-icon.svg" alt="">
+          <div class="photo__like-wrapper">
+            <button class="photo__like-button" type="button">
+              <img class="photo__like-image" src="img/interface/other/like-icon.svg" alt="">
             </button>
-            <span>143</span>
+            <span class="photo__like-counter">143</span>
           </div>
         </article>
 
-        <article>
-
+        <article class="photo">
           <picture>
             <source type="image/webp" media="(min-width: 1200px)" srcset="img/content/photo/desktop/photo-3-desktop@1x.webp, img/content/photo/desktop/photo-3-desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width: 768px)" srcset="img/content/photo/tablet/photo-3-tablet@1x.webp, img/content/photo/tablet/photo-3-tablet@2x.webp 2x">
             <source type="image/webp" srcset="img/content/photo/mobile/photo-3-mobile@1x.webp, img/content/photo/mobile/photo-3-mobile@2x.webp 2x">
             <source media="(min-width: 1200px)" srcset="img/content/photo/desktop/photo-3-desktop@1x.jpg 1x, img/content/photo/desktop/photo-3-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)" srcset="img/content/photo/tablet/photo-3-tablet@1x.jpg 1x, img/content/photo/tablet/photo-3-tablet@2x.jpg 2x">
-            <img src="img/content/photo/mobile/photo-3-mobile@1x.jpg" srcset="img/content/photo/mobile/photo-3-mobile@2x.jpg 2x" width="280" height="280" alt="">
+            <img class="photo__image" src="img/content/photo/mobile/photo-3-mobile@1x.jpg" srcset="img/content/photo/mobile/photo-3-mobile@2x.jpg 2x" width="280" height="280" alt="">
           </picture>
-          <h3>Дорога на север</h3>
-          <p>
-            <span>Автор фото:</span>
-            <span>Петр</span>
+          <h3 class="photo__name">Дорога на север</h3>
+          <p class="photo__author-wrapper">
+            <span class="photo__author">Автор фото:</span>
+            <span class="photo__author-name">Петр</span>
           </p>
-          <div>
-            <button type="button">
-              <img src="img/interface/other/like-icon.svg" alt="">
+          <div class="photo__like-wrapper">
+            <button class="photo__like-button" type="button">
+              <img class="photo__like-image" src="img/interface/other/like-icon.svg" alt="">
             </button>
-            <span>96</span>
+            <span class="photo__like-counter">96</span>
           </div>
         </article>
 
-        <article>
+        <article class="photo">
           <picture>
             <source type="image/webp" media="(min-width: 1200px)" srcset="img/content/photo/desktop/photo-4-desktop@1x.webp, img/content/photo/desktop/photo-4-desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width: 768px)" srcset="img/content/photo/tablet/photo-4-tablet@1x.webp, img/content/photo/tablet/photo-4-tablet@2x.webp 2x">
             <source type="image/webp" srcset="img/content/photo/mobile/photo-4-mobile@1x.webp, img/content/photo/mobile/photo-4-mobile@2x.webp 2x">
             <source media="(min-width: 1200px)" srcset="img/content/photo/desktop/photo-4-desktop@1x.jpg 1x, img/content/photo/desktop/photo-4-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)" srcset="img/content/photo/tablet/photo-4-tablet@1x.jpg 1x, img/content/photo/tablet/photo-4-tablet@2x.jpg 2x">
-            <img src="img/content/photo/mobile/photo-4-mobile@1x.jpg" srcset="img/content/photo/mobile/photo-4-mobile@2x.jpg 2x" width="280" height="280" alt="">
+            <img class="photo__image" src="img/content/photo/mobile/photo-4-mobile@1x.jpg" srcset="img/content/photo/mobile/photo-4-mobile@2x.jpg 2x" width="280" height="280" alt="">
           </picture>
-          <h3>Мост дьявола</h3>
-          <p>
-            <span>Автор фото:</span>
-            <span>Антон</span>
+          <h3 class="photo__name">Мост дьявола</h3>
+          <p class="photo__author-wrapper">
+            <span class="photo__author">Автор фото:</span>
+            <span class="photo__author-name">Антон</span>
           </p>
-          <div>
-            <button type="button">
-              <img src="img/interface/other/like-icon.svg" alt="">
+          <div class="photo__like-wrapper">
+            <button class="photo__like-button" type="button">
+              <img class="photo__like-image" src="img/interface/other/like-icon.svg" alt="">
             </button>
-            <span>254</span>
+            <span class="photo__like-counter">254</span>
           </div>
         </article>
       </div>
 
     </section>
 
-    <section>
+    <section class="videopresent">
+      <h2 class="visually-hidden">Видеопрезентация 'Седоны'</h2>
 
-      <p>
-        Все еще сомневаетесь?
-      </p>
+      <p class="videopresent__title">Все еще сомневаетесь?</p>
 
-      <p>
+      <p class="videopresent__text">
         Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!
       </p>
 
-      <div>
-        <video src="#" poster="img/content/photo/desktop/video-desktop.jpg" width="320" height="200"></video>
-        <div>
+      <div class="video-player">
+        <video class="video-player__content" src="#" poster="img/content/photo/desktop/video-desktop.jpg" width="320" height="200"></video>
+        <div class="video-player__controls">
           <button type="button" aria-label="Реплэй.">
             <svg role="img" width="16" height="20" viewBox="0 0 16 20">
               <use xlink:href="img/sprite.svg#replay"></use>
@@ -182,54 +179,49 @@
         </div>
       </div>
 
-
     </section>
 
   </main>
 
-  <footer>
-    <h2>Наши соцсети</h2>
+  <footer class="footer">
+    <h2 class="visually-hidden">Наши соцсети</h2>
 
-    <a href="https://www.instagram.com/explore/tags/visitsedona" target="_blank">
+    <a class="footer__hashtag" href="https://www.instagram.com/explore/tags/visitsedona" target="_blank">
       #visitSEDONA
     </a>
 
-    <ul>
-      <li>
-        <a href="https://twitter.com/htmlacademy_ru">
-          <svg role="img" width="18" height="15">
+    <ul class="social">
+      <li class="social__item">
+        <a class="social__link" href="https://twitter.com/htmlacademy_ru">
+          <svg class="social__image" role="img" aria-label="Мы в твиттер" width="18" height="15">
             <use xlink:href="img/sprite.svg#icon-twitter"></use>
           </svg>
         </a>
-        <span>Мы в твиттер</span>
       </li>
-      <li>
-        <a href="https://www.facebook.com/htmlacademy">
-          <svg role="img" width="9" height="19">
+      <li class="social__item">
+        <a class="social__link" href="https://www.facebook.com/htmlacademy">
+          <svg class="social__image" role="img" aria-label="Мы в фейсбук" width="9" height="19">
             <use xlink:href="img/sprite.svg#icon-facebook"></use>
           </svg>
         </a>
-        <span>Мы в фейсбук</span>
       </li>
-      <li>
-        <a href="https://www.youtube.com/user/htmlacademyru">
-          <svg role="img" width="20" height="14">
+      <li class="social__item">
+        <a class="social__link" href="https://www.youtube.com/user/htmlacademyru">
+          <svg class="social__image" role="img" aria-label="Мы в ютубе" width="20" height="14">
             <use xlink:href="img/sprite.svg#icon-youtube"></use>
           </svg>
-          <span>Мы в ютубе</span>
         </a>
       </li>
     </ul>
 
-    <div>
-      <span>Разработано</span>
-      <a href="https://htmlacademy.ru/intensive" target="_blank">
-        <svg role="img" width="27" height="34">
+    <div class="footer__developed">
+      <span class="footer__developed-text">Разработано</span>
+      <a class="footer__developed-link" href="https://htmlacademy.ru/intensive" target="_blank">
+        <svg class="footer__developed-image" role="img" width="27" height="34">
           <use xlink:href="img/sprite.svg#htmlacademy"></use>
         </svg>
       </a>
     </div>
-
   </footer>
 
 </body>
