@@ -13,7 +13,7 @@
   }
 
   @include media-min(xl) {
-    min-width: map-get($widths, xl);
+    width: map-get($widths, xl);
     padding-right: $gap-xl;
     padding-left: $gap-xl;
   }
