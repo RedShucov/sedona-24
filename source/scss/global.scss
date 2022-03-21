@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  color: var(--black);
+
+  background-color: var(--gray-2);
+}
+
+img {
+  display: block;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
