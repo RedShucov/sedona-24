@@ -1,3 +1,22 @@
+// цвета
+:root {
+  --background-main: #5b6e7d;
+  --black: #000000;
+  --black-alpha2: rgba(0, 0, 0, 0.2);
+  --brown: #766357;
+  --gray-1: #f2f2f2;
+  --gray-2: #eeeeee;
+  --gray-3: #e5e5e5;
+  --gray-4: #d5d5d5;
+  --gray-5: #333333;
+  --gray-6: #5c6870;
+  --skyblue: #81b3d2;
+  --skyblue-2: #669ec0;
+  --skyblue-3: #5496bd;
+  --white: #ffffff;
+  --white-alpha2: rgba(255, 255, 255, 0.2);
+}
+
 // Ширина экрана
 
 $widths: (
@@ -9,6 +28,5 @@ $widths: (
 // Отступы
 
 $gap-sm: 20px;
-$gap-md: 60px;
-$gap-xl: 40px;
-
+$gap-md: 0;
+$gap-xl: 58;
