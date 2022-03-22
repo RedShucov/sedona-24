@@ -1,0 +1,118 @@
+.site-navigation {
+  padding-top: 9px;
+
+  font-weight: 700;
+  line-height: 40px;
+}
+
+.site-navigation__list {
+  position: fixed;
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+  text-align: center;
+
+  background-color: var(--skyblue);
+  visibility: hidden;
+}
+
+// класс добавляемый при клике на 'бургер'
+.site-navigation__list--js-open {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+
+  visibility: visible;
+}
+
+.site-navigation__item:last-child {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
+}
+
+.site-navigation__item {
+  padding-top: 11px;
+  padding-bottom: 3px;
+
+  border-top: 1px solid var(--white-alpha2);
+  border-bottom: 1px solid var(--black-alpha2);
+}
+
+.site-navigation__link {
+  display: block;
+
+  color: var(--white);
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.site-navigation__hamburger {
+  display: block;
+  box-sizing: content-box;
+  width: 23px;
+  height: 22px;
+  margin-right: -8px;
+  margin-left: auto;
+  padding: 8px;
+
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.site-navigation__hamburger-inner {
+  position: relative;
+
+  height: 4px;
+
+  background-color: var(--skyblue);
+
+  transition: all 0.4s ease;
+}
+
+// класс добавляемый при клике на 'бургер'
+.site-navigation__hamburger-inner-js--open {
+  background-color: var(--white);
+  transform: rotate(135deg);
+}
+
+// ховер который появляется, когда класс добавляеься при клике на 'бургер'
+.site-navigation__hamburger:hover .site-navigation__hamburger-inner-js--open {
+  transform: rotate(225deg);
+}
+
+.site-navigation__hamburger-inner::before,
+.site-navigation__hamburger-inner::after {
+  content: "";
+  position: absolute;
+
+  display: block;
+  width: 100%;
+  height: inherit;
+
+  background-color: inherit;
+
+  transition: inherit;
+}
+
+.site-navigation__hamburger-inner::before {
+  top: -9px;
+}
+
+.site-navigation__hamburger-inner::after {
+  top: 9px;
+}
+
+// преобразование 'бурегра' в 'крестик' пои добавление класс при клике на 'бургер'
+.site-navigation__hamburger-inner-js--open::before,
+.site-navigation__hamburger-inner-js--open::after {
+  top: auto;
+
+  transform: rotate(90deg) scale(1.2);
+}
+
+.site-navigation__hamburger-inner-js--open::after {
+  transform: rotate(180deg) scale(1.2);
+}
