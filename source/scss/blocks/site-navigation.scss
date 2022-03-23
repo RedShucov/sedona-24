@@ -85,15 +85,14 @@
 // каждый четвертый начиная со второго
 .site-navigation__item:nth-child(4n+2) {
   @include media-min(md) {
-    width: 25%;
+    flex-grow: 1;
   };
 }
 
 // каждый четвертый начинпя с первого
 .site-navigation__item:nth-child(4n-1) {
   @include media-min(md) {
-    width: 25%;
-    margin-left: auto;
+    flex-grow: 1;
 
     text-align: end;
   };
