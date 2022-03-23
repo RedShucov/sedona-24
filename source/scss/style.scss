@@ -3,9 +3,10 @@
 @import "mixins/container.scss";
 @import "mixins/reser-list.scss";
 // Global
+@import "fonts.scss";
 @import "variables.scss";
 @import "global.scss";
-@import "fonts.scss";
+@import "other.scss";
 // Blocks
 @import "blocks/visually-hidden.scss";
 @import "blocks/header.scss";
