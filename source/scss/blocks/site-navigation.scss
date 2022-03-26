@@ -120,6 +120,20 @@
 
     color: var(--black);
   }
+
+  &--active {
+    color: var(--brown);
+  }
+
+  &:hover {
+    color: var(--skyblue);
+  }
+
+  &:active {
+    color: var(--black);
+
+    opacity: 0.3;
+  }
 }
 
 .site-navigation__hamburger {
