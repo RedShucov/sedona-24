@@ -4,25 +4,57 @@
 }
 
 .intro__background {
-  height: 389px;
-
-  background-image: url("../img/interface/background/mobile/intro-main-mobile.jpg");
+  background-color: var(--background-main);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
 
-  @include media-min(sm) {
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/interface/background/mobile/intro-main-mobile@2x.jpg");
+  &--main {
+    height: 389px;
+
+    background-image: url("../img/interface/background/mobile/intro-main-mobile.jpg");
+    background-size: cover;
+
+    @include media-min(sm) {
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/interface/background/mobile/intro-main-mobile@2x.jpg");
+      }
+    }
+    @include media-min(md) {
+      height: 518px;
+
+      background-image: url("../img/interface/background/desktop/intro-main-desktop.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/interface/background/desktop/intro-main-desktop@2x.jpg");
+      }
     }
   }
-  @include media-min(md) {
-    height: 518px;
 
-    background-image: url("../img/interface/background/desktop/intro-main-desktop.jpg");
+  &--inner {
+    height: 158px;
 
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/interface/background/desktop/intro-main-desktop@2x.jpg");
+    background-image: url("../img/interface/background/mobile/intro-inner-mobile.jpg");
+
+    @include media-min(sm) {
+      background-position: bottom;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/interface/background/mobile/intro-inner-mobile@2x.jpg");
+        background-size: cover;
+      }
+    }
+    @include media-min(md) {
+      height: 290px;
+
+      background-image: url("../img/interface/background/desktop/intro-inner-desktop.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/interface/background/desktop/intro-inner-desktop@2x.jpg");
+        background-size: cover;
+      }
+    }
+    @include media-min(xl) {
+      height: 301px;
     }
   }
 }
@@ -40,10 +72,16 @@
   @include media-min(xl) {
     margin-top: 54px;
   }
+
+  &--inner {
+    padding-right: 7%;
+    padding-left: 7%;
+  }
 }
 
 .intro__title {
   font-weight: 700;
+  font-size: 18px;
 
   @include media-min(md) {
     font-size: 21px;
@@ -54,4 +92,10 @@
   margin-top: 32px;
 
   font-size: 14px;
+
+  &--inner {
+    margin-top: 29px;
+
+    line-height: 24px;
+  }
 }
