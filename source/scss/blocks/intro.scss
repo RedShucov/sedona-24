@@ -66,16 +66,24 @@
 
   @include media-min(md) {
     margin-top: 42px;
-    padding-right: 21%;
-    padding-left: 21%;
+    padding-right: 18%;
+    padding-left: 18%;
   }
   @include media-min(xl) {
     margin-top: 54px;
+    padding-right: 21%;
+    padding-left: 21%;
   }
 
   &--inner {
     padding-right: 7%;
     padding-left: 7%;
+
+    @include media-min(md) {
+      margin-top: 42px;
+      padding-right: 21%;
+      padding-left: 21%;
+    }
   }
 }
 
