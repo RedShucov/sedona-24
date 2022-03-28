@@ -1,0 +1,10 @@
+.main-index__advantage {
+  margin-top: 34px;
+
+  @include media-min(md) {
+    margin-top: 54px;
+  }
+  @include media-min(xl) {
+    margin-top: 42px;
+  }
+}
