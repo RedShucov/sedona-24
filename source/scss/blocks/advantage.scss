@@ -3,24 +3,30 @@
   padding: 0;
 
   list-style: none;
+  font-size: 14px;
+  line-height: 21px;
 }
 
 .advantage__special {
   @include media-min(md) {
     display: flex;
   }
+
+  &--reverse {
+    @include media-min(md) {
+      flex-direction: row-reverse;
+    }
+  }
 }
 
 .advantage__special-wrapper {
   display: flex;
   flex-direction: column;
-  padding-top: 49px;
+  padding-top: 52px;
   padding-right: 8%;
-  padding-bottom: 22px;
+  padding-bottom: 27px;
   padding-left: 8%;
 
-  font-size: 14px;
-  line-height: 23px;
   text-align: center;
   color: var(--white);
 
@@ -41,6 +47,20 @@
     padding: 47px 5% 32px;
 
     background-image: unset;
+  }
+}
+
+.advantage__special--reverse .advantage__special-wrapper {
+  padding-top: 40px;
+  padding-bottom: 24px;
+
+  background-image: none;
+
+  @include media-min(md) {
+    padding-top: 44px;
+  }
+  @include media-min(xl) {
+    padding: 50px 7% 24px 7%;
   }
 }
 
@@ -80,9 +100,9 @@
   }
 }
 
-// .advantage__picture {
-//   width: 100%;
-// }
+.advantage__picture {
+  flex-grow: 1;
+}
 
 .advantage__image {
   width: 100%;
@@ -91,4 +111,111 @@
     height: 256px;
   }
   object-fit: cover;
+}
+
+.advantage__city-worth {
+  margin: 0;
+  padding: 7% 0;
+
+  list-style: none;
+
+  @include media-min(md) {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 7.5% 0 6%;
+  }
+  @include media-min(xl) {
+    padding: 5% 0 5.5%;
+  }
+}
+
+.advantage__city-item {
+  position: relative;
+
+  padding: 15px 13% 0 22%;
+
+  background-repeat: no-repeat;
+
+  @include media-min(md) {
+    flex-basis: 33.3%;
+    padding: 13% 4% 0 4%;
+
+    text-align: center;
+  }
+  @include media-min(xl) {
+    padding: 8.3% 4%0;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    right: 81.5%;
+
+    display: block;
+
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    @include media-min(md) {
+      right: 50%;
+
+      transform: translateX(50%);
+    }
+  }
+}
+
+.advantage__city-item--house::before {
+  top: 3%;
+
+  width: 39px;
+  height: 36.83px;
+
+  background-image: url("../img/content/other/icon-house.svg");
+
+  @include media-min(md) {
+    top: 2px;
+
+    width: 75px;
+    height: 72px;
+  }
+}
+
+.advantage__city-item--gift::before {
+  top: 3%;
+
+  width: 32px;
+  height: 38px;
+
+  background-image: url("../img/content/other/icon-gift.svg");
+
+  @include media-min(md) {
+    top: 0;
+
+    width: 64px;
+    height: 75px;
+  }
+}
+
+.advantage__city-item--food::before {
+  top: 6%;
+
+  width: 40px;
+  height: 34.9px;
+
+  background-image: url("../img/content/other/icon-burger.svg");
+
+  @include media-min(md) {
+    top: 2%;
+
+    width: 76px;
+    height: 67.9px;
+  }
+}
+
+.advantage__inner-text {
+  margin-top: 18px;
+
+  @include media-min(md) {
+    margin-top: 23px;
+  }
 }
